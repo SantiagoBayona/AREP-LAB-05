@@ -5,6 +5,7 @@ Aplicación web usando el micro-framework de Spark java. Con un container en doc
 ### Prerrequisitos
 - Java
 - Maven
+- Docker
 
 ### Instalación
 
@@ -48,7 +49,7 @@ Para probar se puede hacer con la imagen de docker desde el repositorio. Para es
 docker run -d -p 34000:6000 --name [nombre de la instancia] santiagobayona04/arepbono
 ```
 
-Al hacerlo vemos que el recurso solicitado carga en el navegador
+Al hacerlo vemos que el recurso solicitado carga en el navegador en el puerto especificado en el comando, 34000 en este caso
 
 ![bono arep](https://github.com/SantiagoBayona/Bono-AREP/assets/64861204/d498f832-07db-4b2f-9b78-7df81dece4ad)
 
@@ -68,7 +69,7 @@ Con la imagen ya creada podemos correrla localmente con este comando
 docker run -d -p 34000:6000 --name [nombre de la instancia] [nombre de la imagen]
 ```
 
-O subirla a un repositorio en Dockerhub con los siguientes comandos
+O subirla a un repositorio en Dockerhub para ser corrida remotamente con los siguientes comandos
 
 ```
 docker tag [nombre de la imagen] [usuario en dockerhub]/[nombre del repositorio]
